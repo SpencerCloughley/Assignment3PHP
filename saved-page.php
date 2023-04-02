@@ -1,7 +1,7 @@
     <?php 
     $title='Saving Page..';
     require('includes/header.php');?>
-    
+
     <section>
         <?php
         $ok = true;
@@ -39,3 +39,5 @@
     </section>
 
     <a href="page-list.php">See List</a>
+
+    <?php require('includes/footer.php'); ?>

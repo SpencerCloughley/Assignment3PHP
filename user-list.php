@@ -42,3 +42,4 @@
             exit();
         }
         ?>
+        <?php require('includes/footer.php'); ?>

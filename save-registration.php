@@ -54,3 +54,4 @@ if ($ok) {
     header('location:index.php');
 }
 ?>
+<?php require('includes/footer.php'); ?>

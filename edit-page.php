@@ -28,3 +28,4 @@ echo '<p>Page Deleted</p>
 
 header('location:page-tabel.php');
 ?>
+<?php require('includes/footer.php'); ?>
