@@ -24,14 +24,14 @@
             <td>' . $page['pageName'] . '</td>
             <td>
             <a href="edit-page.php?pageId=' . $page['pageId'] .'" title="Edit">
-                Edit</i>
+                <i class="fa-solid fa-pen-to-square"></i>
             </a>
             <td>         
             <a href="delete-page.php?pageId=' . $page['pageId'] . '"
                 title="Delete" onclick="return confirmDelete();">
-                    Delete</i>
+                    <i class="fa-solid fa-trash-can"></i>
             </a>
-        </td>
+            </td>
             </tr>';
         }
         //closing out table

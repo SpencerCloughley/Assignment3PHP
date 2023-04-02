@@ -23,14 +23,14 @@
             <td>' . $user['username'] . '</td>
             <td>
             <a href="edit-user.php?userId=' . $user['userId'] .'" title="Edit">
-                Edit</i>
+                <i class="fa-solid fa-pen-to-square"></i>
             </a>
             <td>         
             <a href="delete-user.php?userId=' . $user['userId'] . '"
                 title="Delete" onclick="return confirmDelete();">
-                    Delete</i>
+                    <i class="fa-solid fa-trash-can"></i>
             </a>
-        </td>
+            </td>
             </tr>';
         }
         //closing out table
