@@ -15,7 +15,7 @@
 <body>
     <header>
         <h1>
-            <a href="index.php">Assignment 2</a>
+            <a href="index.php?pageId='Home'">Assignment 2</a>
         </h1>
         <nav>
             <ul>

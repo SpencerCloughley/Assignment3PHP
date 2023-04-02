@@ -1,7 +1,7 @@
 <?php 
     require('includes/auth.php');
 
-    $title='Page List';
+    $title='User List';
     require('includes/header.php');?>
     <main>
         <h1>Administrators</h1>

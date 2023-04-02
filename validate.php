@@ -30,7 +30,7 @@ else {
         // access the current session so we can write a session variable to it with the user's identity
         session_start();
         $_SESSION['user'] = $username;
-        header('location:index.php');
+        header("location:index.php?pageId='Home'");
         exit();
     }
 }
