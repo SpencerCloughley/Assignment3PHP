@@ -22,6 +22,7 @@ if ($password != $confirm) {
 }
 
 if ($ok) {
+    try{
     // connect
     require('includes/db.php');
 
@@ -45,13 +46,19 @@ if ($ok) {
     else {
         echo 'User already exists.<br />';
         exit();
-    }        
+    }    
+        
 
     // disconnect
     $db = null;
+    }
+    catch(Exception $e){
+    header('location:error.php');
+        exit();
+    }
 
     // redirect
-    header('location:index.php');
+    header("index.php?pageId='Home'");
 }
 ?>
 <?php require('includes/footer.php'); ?>

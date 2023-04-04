@@ -23,6 +23,7 @@ if(empty($content)){
 }
 
 if($ok){
+    try{
     require('includes/db.php');
     $sql="UPDATE pages SET pageName=:pageName,content=:content WHERE pageId= :pageId";
     $cmd = $db->prepare($sql);
@@ -33,6 +34,11 @@ if($ok){
     $cmd->execute();
     $db=null;
     echo "Page updated";
+    }
+    catch(Exception $e){
+    header('location:error.php');
+    exit();
+    }
 }
 header('location:page-list.php');
 ?>

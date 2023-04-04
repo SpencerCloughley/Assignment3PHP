@@ -1,6 +1,6 @@
 <?php 
     require('includes/auth.php');
-    $title='Assignment 2';
+    $title='Edit Page';
     require('includes/header.php');
 
     $pageId=$_GET['pageId'];
