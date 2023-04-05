@@ -1,4 +1,6 @@
 <?php
+require('includes/header.php');
+$title="Save Registration";
 // grab form inputs
 $username = $_POST['username'];
 $password = $_POST['password'];

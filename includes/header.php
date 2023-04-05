@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title;?></title>
     <!-- custom css -->
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="./css/app.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/scripts.js" defer></script>
@@ -56,9 +56,6 @@
                     </li>
                     <li>
                         <a href="user-list.php">Users</a>
-                    </li>
-                    <li>
-                        <a href="#"><?php echo $_SESSION['user'] ?></a>
                     </li>
                     <li>
                         <a href="logout.php">Logout</a>
