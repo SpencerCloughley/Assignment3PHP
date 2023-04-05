@@ -20,3 +20,4 @@
             <button>Save</button>
         </form>
     </main>
+    <?php require('includes/footer.php'); ?>

@@ -8,7 +8,7 @@ header{
     width: 100%;
     padding: 0px;
 }
-header h1 a, a:visited {
+header h1 a, a:visited, a {
      text-decoration: none;
      color: #F7F7D4; 
 }
