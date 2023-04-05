@@ -1,12 +1,12 @@
 <?php
 require('includes/auth.php');
 
-$title = 'Page Details';
+$title = 'Delete User';
 require('includes/header.php');
 
-$pageId = $_GET['pageId'];
+$userId = $_GET['userId'];
 
-if (empty($pageId) || !is_numeric($pageId)) {
+if (empty($userId) || !is_numeric($userId)) {
     header('location:400.php');  // bad request http 400 error
     exit();
 }
@@ -15,9 +15,9 @@ try{
 require('includes/db.php');
 
 
-$sql = "DELETE FROM pages WHERE pageId = :pageId";
+$sql = "DELETE FROM users WHERE userId = :userId";
 $cmd = $db->prepare($sql);
-$cmd->bindParam(':pageId', $pageId, PDO::PARAM_INT);
+$cmd->bindParam(':userId', $userId, PDO::PARAM_INT);
 
 
 $cmd->execute();
@@ -28,9 +28,9 @@ $db = null;
     header('location:error.php');
     exit();
 }
-echo '<p>Page Deleted</p>
-    <a href="page-list.php">See the Updated Page List</a>';
+echo '<p>User Deleted</p>
+    <a href="user-list.php.php">See the Updated User List</a>';
 
-header('location:page-list.php');
+header('location:user-list.php');
 ?>
 <?php require('includes/footer.php'); ?>

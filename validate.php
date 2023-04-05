@@ -1,4 +1,5 @@
 <?php
+try{
 // connect
 require('includes/db.php');
 
@@ -33,5 +34,9 @@ else {
         header("location:index.php?pageId='Home'");
         exit();
     }
+}
+}catch(Exception $e){
+    header('location:error.php');
+    exit();
 }
 ?>

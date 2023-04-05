@@ -3,6 +3,7 @@
     $title='Edit Page';
     require('includes/header.php');
 
+    try{
     $pageId=$_GET['pageId'];
     require('includes/db.php');
     $sql="SELECT * FROM pages WHERE pageId=:pageId";
@@ -17,6 +18,11 @@
     }
         $pageName=$page['pageName'];
         $content=$page['content'];
+    }catch(Exception $e){
+        header('location:error.php');
+        exit();
+    }
+    
     ?>
     <h1>Edit Page</h1>
     <form action="update-page.php" method="post">

@@ -21,6 +21,7 @@
         }
 
         if ($ok) {
+            try{
             require('includes/db.php');
             $sql = "INSERT INTO pages (pageName,content) VALUES(:name, :content)";
 
@@ -34,6 +35,11 @@
             $db = null;
 
             echo "Page added";
+            }catch(Exception $e){
+                header('location:error.php');
+                exit();
+            }
+            
         }
         ?>
     </section>
