@@ -24,6 +24,7 @@ $username=$user['username'];
     exit();
 }
 ?>
+<main>
 <h1>Edit User</h1>
     <form action="update-user.php" method="post">
             <fieldset>
@@ -45,5 +46,5 @@ $username=$user['username'];
             <button class="btnOffset">Update</button>
             <input name="userId" id="userId" value="<?php echo $userId; ?>" type="hidden" />
     </form>
-
+</main>
 <?php require('includes/footer.php'); ?>

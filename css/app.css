@@ -32,6 +32,9 @@ main{
     padding-top: 100px;
     padding-left: 10px;
 }
+main a, main a:visited{
+    color: #8601AF;
+}
 body {
     font-family: 'Barlow', sans-serif;
     font-family: 'PT Serif', serif;

@@ -8,8 +8,6 @@
     <!-- remove any custom browser styles -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <!-- custom css -->
-    <!-- I can not figure out why the css is not loading in the webpage, everything else loads fine-->
-    <!-- The pages have been styled in the app.css, just not displayed -->
     <link rel="stylesheet" href="./css/app.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
