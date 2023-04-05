@@ -46,5 +46,4 @@ $username=$user['username'];
             <button class="btnOffset">Update</button>
             <input name="userId" id="userId" value="<?php echo $userId; ?>" type="hidden" />
     </form>
-</main>
 <?php require('includes/footer.php'); ?>

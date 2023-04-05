@@ -38,6 +38,5 @@
             <button class="btnOffset">Update</button>
             <input name="pageId" id="pageId" value="<?php echo $pageId; ?>" type="hidden" />
     </form>
-    </main>
 
 <?php require('includes/footer.php'); ?>
